@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/adi.css">
+    <link rel="stylesheet" href="assets/css/adi2.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="width: 200px;">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>NStarx</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="ai-zones.html"><i class="fas fa-user-circle"></i><span>AI Zones</span></a><a class="nav-link active" href="deployments.html"><i class="fas fa-user-circle"></i><span>Deployments</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Cost Center</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>User Management</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop-1" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button">+ New Deployments</a>
+                            <div class="collapse show" id="collapse-1">
+                                <p>Collapse content.</p>
+                                <div></div>
+                                <div class="row"><div class="container my-5 layout">
+    <div class="cards">
+      <div class="custom-card" onclick="showDetails('details1')">
+        <div class="icon-container">
+          <i class="bi bi-layers"></i>
+        </div>
+        <div>
+          <h5 class="mb-2">Service</h5>
+          <p class="mb-0 text-muted">Docker, Streamlit, Gradio, FastAPI</p>
+        </div>
+      </div>
+
+      <div class="custom-card" onclick="showDetails('details2')">
+        <div class="icon-container">
+          <i class="bi bi-cloud"></i>
+        </div>
+        <div>
+          <h5 class="mb-2">Model</h5>
+          <p class="mb-0 text-muted">Sklearn, Tensorflow, LLM, ...</p>
+        </div>
+      </div>
+
+      <div class="custom-card" onclick="showDetails('details3')">
+        <div class="icon-container">
+          <i class="bi bi-bar-chart"></i>
+        </div>
+        <div>
+          <h5 class="mb-2">Notebooks</h5>
+          <p class="mb-0 text-muted">DS Notebooks, VSCode</p>
+        </div>
+      </div>
+
+      <div class="custom-card" onclick="showDetails('details4')">
+        <div class="icon-container">
+          <i class="bi bi-robot"></i>
+        </div>
+        <div>
+          <h5 class="mb-2">Finetune models</h5>
+          <p class="mb-0 text-muted">RAG, LLMs, ...</p>
+        </div>
+      </div>
+
+      <div class="custom-card" onclick="showDetails('details5')">
+        <div class="icon-container">
+          <i class="bi bi-gear"></i>
+        </div>
+        <div>
+          <h5 class="mb-2">Service 5</h5>
+          <p class="mb-0 text-muted">DevOps, CI/CD, Jenkins</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-container">
+      <div id="details1" class="details-section">
+        <div class="container my-4">
+        <h2><i class="fas fa-plus-circle"></i> Create New Service</h2>
+
+        <!-- Name Field -->
+        <div class="panel">
+            <div class="panel-header">Service Name</div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                <input type="text" id="name" class="form-control" placeholder="3 to 32 lower case characters long">
+                <div class="form-text text-danger">Cannot start with a number, may contain - in between</div>
+            </div>
+        </div>
+
+        <!-- Deployment Options -->
+        <div class="panel">
+            <div class="panel-header">Deployment Options</div>
+            <div class="mb-3">
+                <h5>Deploy a Docker image or build and deploy from source code</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="deploymentOption" id="sourceCodeOption">
+                    <label class="form-check-label" for="sourceCodeOption">Source Code (Build and deploy source code)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="deploymentOption" id="dockerImageOption">
+                    <label class="form-check-label" for="dockerImageOption">Docker Image (Deploy an existing image)</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Source Code Section -->
+        <div class="panel">
+            <div class="panel-header">Source Code</div>
+            <label for="repoURL" class="form-label">Fetch source code to build and deploy</label>
+            <input type="url" id="repoURL" class="form-control" placeholder="Enter public URL or select repository">
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <label for="branchName" class="form-label">Branch Name</label>
+                    <input type="text" id="branchName" class="form-control" placeholder="Enter branch name">
+                </div>
+                <div class="col-md-6">
+                    <label for="commitSHA" class="form-label">Commit SHA</label>
+                    <input type="text" id="commitSHA" class="form-control" placeholder="Enter Commit SHA">
+                </div>
+            </div>
+        </div>
+
+        <!-- Docker File Section -->
+        <div class="panel">
+            <div class="panel-header">Docker File</div>
+            <label for="dockerFilePath" class="form-label">Path to Dockerfile</label>
+            <input type="text" id="dockerFilePath" class="form-control" placeholder="/Dockerfile">
+            <label for="buildContextPath" class="form-label mt-2">Path to build context</label>
+            <input type="text" id="buildContextPath" class="form-control" placeholder="Enter build context path">
+        </div>
+
+        <!-- Traffic Configuration -->
+        <div class="panel">
+            <div class="panel-header">Traffic Configuration</div>
+            <h5>Configure ports and endpoints to route customer traffic</h5>
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <label for="port" class="form-label">Port</label>
+                    <input type="number" id="port" class="form-control" placeholder="Enter port">
+                </div>
+                <div class="col-md-6">
+                    <label for="endpoint" class="form-label endpoint-label"><i class="fas fa-link"></i> Endpoint</label>
+                    <input type="text" id="endpoint" class="form-control" placeholder="https://example.truefoundry.cloud">
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="expose">
+                        <label class="form-check-label" for="expose">Expose</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <label for="protocol" class="form-label">Protocol</label>
+                    <select id="protocol" class="form-select">
+                        <option value="http">HTTP</option>
+                        <option value="https">HTTPS</option>
+                    </select>
+                </div>
+                <div class="col-md-9">
+                    <label for="securityRules" class="form-label">Custom Security Rule</label>
+                    <input type="text" id="securityRules" class="form-control" placeholder="Enter custom security rules">
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Configuration -->
+        <div class="panel">
+            <div class="panel-header">Resources</div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Request</th>
+                        <th>Limit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 0.2"></td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 0.5"></td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 200MB"></td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 500MB"></td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 1000MB"></td>
+                        <td><input type="text" class="form-control" placeholder="e.g., 2000MB"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="panel">
+            <div class="panel-header">Actions</div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-light"><i class="fas fa-arrow-left"></i> Back</button>
+                <div>
+                    <button class="btn btn-secondary me-2"><i class="fas fa-file-code"></i> Deploy using YAML</button>
+                    <button class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <div id="details2" class="details-section">
+        <h6>More Details about Service 2</h6>
+        <p>This section covers information on cloud computing solutions like AWS and Azure, their use cases, and setup guides.</p>
+      </div>
+      <div id="details3" class="details-section">
+        <h6>More Details about Service 3</h6>
+        <p>Explore data analytics tools like Power BI and Tableau, focusing on their features and application in business intelligence.</p>
+      </div>
+      <div id="details4" class="details-section">
+        <h6>More Details about Service 4</h6>
+        <p>Learn about AI development frameworks like TensorFlow and PyTorch, and their role in creating intelligent solutions.</p>
+      </div>
+      <div id="details5" class="details-section">
+        <h6>More Details about Service 5</h6>
+        <p>Understand DevOps methodologies, including CI/CD pipelines with Jenkins and automated deployment strategies.</p>
+      </div>
+    </div>
+  </div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>monthly COST</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>$5,000</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Buget (annual)</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>$215,000</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Tasks</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span>95%</span></div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="visually-hidden">50%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>Pending Requests</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>18</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 fw-bold"></p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                        <option value="10" selected="">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>&nbsp;</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                        </div>
+                                    </div><div class="table-container">
+        <div class="d-flex justify-content-between mb-3">
+            <h2>Deployments</h2>
+            <button class="btn btn-primary">+ New Deployment</button>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Active Version</th>
+                    <th>Source & Artifacts</th>
+                    <th>Workspace</th>
+                    <th>Endpoint</th>
+                    <th>Insights</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> emotion-class <span class="badge bg-primary">dev</span><span class="badge bg-warning text-dark">GPU</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>4</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                            </div>
+                            <span class="status-icon active"><i class="fas fa-circle-check"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">main</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: 3fd253</a>
+                    </td>
+                    <td>demo-ws</td>
+                    <td><a href="#">https://emotion-class-demo...</a></td>
+                    <td class="insights">Save up to $122</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> xgboost-classifier-triton <span class="badge bg-primary">dev</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                            </div>
+                            <span class="status-icon"><i class="fas fa-pause"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">dev</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: 1a2b3c</a>
+                    </td>
+                    <td>dev-ws</td>
+                    <td><a href="#">https://xgboost-classifier...</a></td>
+                    <td class="insights">Save up to $105</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> autoshutdown-demo <span class="badge bg-primary">dev</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>4</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;"></div>
+                            </div>
+                            <span class="status-icon shutdown"><i class="fas fa-power-off"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">test</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: 4d5e6f</a>
+                    </td>
+                    <td>demo-ws</td>
+                    <td><a href="#">https://autoshutdown-demo...</a></td>
+                    <td class="insights">Save up to $150</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> whisper-model-triton <span class="badge bg-danger">prod</span><span class="badge bg-warning text-dark">GPU</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                            </div>
+                            <span class="status-icon"><i class="fas fa-pause"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">main</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: a1b2c3</a>
+                    </td>
+                    <td>ml-ws</td>
+                    <td><a href="#">https://whisper-tiny...</a></td>
+                    <td class="insights">Save up to $130</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> streamlit-app <span class="badge bg-primary">dev</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                            </div>
+                            <span class="status-icon active"><i class="fas fa-circle-check"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">main</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: 7g8h9i</a>
+                    </td>
+                    <td>app</td>
+                    <td><a href="#">https://streamlit-app...</a></td>
+                    <td class="insights">Save up to $170</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> vision-detector <span class="badge bg-primary">dev</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>5</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                            </div>
+                            <span class="status-icon active"><i class="fas fa-circle-check"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">vision</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: 0xabc123</a>
+                    </td>
+                    <td>vision-ws</td>
+                    <td><a href="#">https://vision-detector...</a></td>
+                    <td class="insights">Save up to $210</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-layer-group"></i> nlp-analyzer <span class="badge bg-danger">prod</span><span class="badge bg-warning text-dark">GPU</span></td>
+                    <td>
+                        <div class="progress-container">
+                            <span>2</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                            </div>
+                            <span class="status-icon"><i class="fas fa-pause"></i></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="source-icons">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="#">nlp</a>
+                            <i class="fas fa-download"></i>
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <a href="#">rev: ef12345</a>
+                    </td>
+                    <td>nlp-ws</td>
+                    <td><a href="#">https://nlp-analyzer...</a></td>
+                    <td class="insights">Save up to $190</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 mt-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Projects</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small fw-bold">Server migration<span class="float-end">20%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Sales tracking<span class="float-end">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Customer Database<span class="float-end">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Payout Details<span class="float-end">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Account setup<span class="float-end">Complete!</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Todo List</h6>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">10:30 AM</span>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1"></label></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">11:30 AM</span>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2"></label></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">12:30 AM</span>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3"></label></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2025</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/adi.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
